@@ -31,7 +31,7 @@ export default function App() {
     setObj({ ...obj, email: 'text@gmail.com' });
   };
   const modObj = () => {
-    setObj({ ...obj, email: 'zzzz@gmail.com' });
+    setObj({ ...obj, email: 'zzzz@gmail.com' }); // ...obj 기존의 값을 변경하지 않고 그대로 가지고 온다
   };
   const delObj = () => {
     const { email, ...delObj } = obj;
